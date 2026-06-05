@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipmind"
+version = "1.0.0"
+description = "🧠 Intelligent Terminal Clipboard History Manager"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "ClipMind Team", email = "clipmind@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "Topic :: Terminals",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+keywords = ["clipboard", "history", "terminal", "cli", "tui", "developer-tools", "productivity"]
+
+[project.scripts]
+clipmind = "clipmind.cli:main"
+cm = "clipmind.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/ClipMind"
+"Bug Reports" = "https://github.com/gitstq/ClipMind/issues"
+Source = "https://github.com/gitstq/ClipMind"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

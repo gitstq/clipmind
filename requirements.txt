@@ -1,0 +1,3 @@
+# ClipMind - Zero Dependencies!
+# This project uses only Python standard library.
+# No external packages required.
